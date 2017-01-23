@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* Global Styles */
+body {
+    margin: 0px;
+    padding: 9px;
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
+#black {
+    background-color: black;
+    color: white;
+}
+
+
+.grid {
+    height: 100%;
+}
+
+.column {
+    font-size: 50px;
+    line-height: 80px;
+}
+
+.ui.secondary.inverted.menu {
+    background-color: black;
+    font-size: 20px;
+}
