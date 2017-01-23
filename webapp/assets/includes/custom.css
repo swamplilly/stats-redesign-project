@@ -18,7 +18,7 @@ body {
     height: 100%;
 }
 
-.column {
+a.column {
     font-size: 50px;
     line-height: 80px;
 }
@@ -26,4 +26,17 @@ body {
 .ui.secondary.inverted.menu {
     background-color: black;
     font-size: 20px;
+}
+
+.inverted.segment {
+    height: 80px;
+}
+
+.ui.negative.button {
+    background-color: #CF322D;
+}
+
+.ui.positive.button {
+
+    background-color: #68863F;
 }
