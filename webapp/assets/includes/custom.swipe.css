@@ -40,3 +40,7 @@ a.column {
 
     background-color: #68863F;
 }
+
+.hidden {
+    display: none;
+}

@@ -1,195 +1,179 @@
 <html>
 <head>
-	<title>Mockup</title>
+    <title>Mockup</title>
 
-	<!-- Semantic UI -->
-	<link rel="stylesheet" type="text/css" href="assets/includes/semantic.min.css?v=1">
-	<script type="text/javascript" src="assets/includes/semantic.min.js?v=1"></script>
-	<link rel="stylesheet" href = "assets/includes/calendar/dist/calendar.min.css">
-	<script type="text/javascript" src="assets/includes/calendar/dist/calendar.min.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="assets/includes/jquery.min.js"></script>
 
-	<!-- JQuery -->
-	<script type="text/javascript" src="assets/includes/jquery.min.js"></script>
+    <!-- Semantic UI -->
+    <link rel="stylesheet" type="text/css" href="assets/includes/semantic.min.css?v=1">
+    <script type="text/javascript" src="assets/includes/semantic.min.js?v=1"></script>
+    <link rel="stylesheet" href = "assets/includes/calendar/dist/calendar.min.css">
+    <script type="text/javascript" src="assets/includes/calendar/dist/calendar.min.js"></script>
 
-	<!-- Customization -->
-	<link rel="stylesheet" type="text/css" href="assets/includes/custom.css?v=1" />
-	<!-- IScroll Link here -->
-	<script type="text/javascript" src="assets/includes/custom.js?v=1"></script>
+    <!-- Customization -->
+    <link rel="stylesheet" type="text/css" href="assets/includes/custom.css?v=1" />
+    <!-- IScroll Link here -->
+    <script type="text/javascript" src="assets/includes/custom.js?v=1"></script>
 
 
 </head>
 <body>
 
-	<div class = "ui menu"> 
-		<a href = "index.html" class = "header item">Home</a> 
+    <!-- Menu -->
+    <div class = "ui menu"> 
+        <a href = "index.html" class = "header item">Home</a> 
+    </div>
 
+    <!-- Calendar -->
+    <div class = "ui calendar" id = "calendar"> 
+        <div class = "ui input left icon"> 
+            <i class = "calendar icon"> </i> 
+            <input type = "text" placeholder = "Date">
+        </div> 
+    </div>
+    <br />
 
-	</div>
+    <!-- Content -->
+    <div class = "ui equal width aligned grid"> 
+        <div class = "eight wide  column"> 
+            <div class="ui fluid card">
+                <div class="content"> 
+                    <div class = "ui inverted segment left floated"> 
+                        <div class = "ui tiny inverted statistics left floated"> 
+                            <div class = "statistic">
+                                <div class = "value"> 45 
+                                </div> 
+                                <div class = "label"> Count </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="../img/directions.png"> 
 
-	<div class = "ui calendar" id = "calendar"> 
-		<div class = "ui input left icon"> 
-			<i class = "calendar icon"> </i> 
-			<input type = "text" placeholder = "Date">
-		</div> 
-	</div>
-<br />
-
-
-	<div class = "ui equal width aligned grid"> 
-		<div class = "eight wide  column"> 
-			<div class="ui fluid card">
-				<div class="content"> 
-					<div class = "ui inverted segment left floated"> 
-						<div class = "ui tiny inverted statistics left floated"> 
-							<div class = "statistic">
-								<div class = "value"> 45 
-								</div> 
-								<div class = "label"> Count </div>
-							</div>
-						</div>
-					</div>
-					<img class="ui tiny image left floated" src="../img/directions.png"> 
-
-					<div class = "header"> Directions </div> 
-					<div class = "meta"> Location or directions provided. E.G. rooms, events, contact info, etc. </div> 
-
-
-
-				</div>
-				<div class="ui two bottom attached buttons">
-					<div class="ui negative button"> <i class = "ui minus icon"> </i> </div>
-					<div class="ui positive button"> <i class = "ui plus icon"> </i></div>
-				</div>
-
-			</div>
-		</div>
-		<div class = "eight wide column"> 
-			<div class="ui fluid card">
-				<div class="content">
-					<div class = "ui inverted segment left floated">
-						<div class = "ui tiny inverted statistics left floated"> 
-							<div class = "statistic">
-								<div class = "value"> 45
-								</div> 
-								<div class = "label"> Count </div>
-							</div>
-						</div>
-					</div>
-					<img class="ui tiny image left floated" src="../img/lookup.png"> 
-					<div class = "header"> Lookup </div>
-					<div class = "meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
-				</div> 
-				<div class="ui two bottom attached buttons">
-					<div class="ui negative button"> <i class = "ui minus icon"> </i> </div>
-					<div class="ui positive button"> <i class = "ui plus icon"> </i></div>
-				</div>
-			</div>
-
-		</div>
-		<div class = "eight wide column"> 
-
-			<div class="ui fluid card">
-				<div class="content">
-					<div class = "ui inverted segment left floated">
-						<div class = "ui tiny inverted statistics left floated"> 
-							<div class = "statistic">
-								<div class = "value"> 45
-								</div> 
-								<div class = "label"> Count </div>
-							</div>
-						</div>
-					</div>
-					<img class="ui tiny image left floated" src="../img/policy.png"> 
-					<div class = "header"> Policy </div>
-					<div class = "meta"> Hours, access privileges, borrowing, reservations, other policies. </div>
-				</div> 
-				<div class="ui two bottom attached buttons">
-					<div class="ui negative button"> <i class = "ui minus icon"> </i> </div>
-					<div class="ui positive button"> <i class = "ui plus icon"> </i></div>
-				</div>
-			</div>
-
-		</div>
-		<div class = "eight wide column"> 
-
-			<div class="ui fluid card">
-				<div class="content">
-					<div class = "ui inverted segment left floated">
-						<div class = "ui tiny inverted statistics left floated"> 
-							<div class = "statistic">
-								<div class = "value"> 45
-								</div> 
-								<div class = "label"> Count </div>
-							</div>
-						</div>
-					</div>
-					<img class="ui tiny image left floated" src="../img/research.png">
-					<div class = "header"> Research Assistance </div>
-					<div class = "meta"> Help patron with research strategies, advice, overview of resources (drop-in). </div>
-				</div> 
-				<div class="ui two bottom attached buttons">
-					<div class="ui negative button"> <i class = "ui minus icon"> </i> </div>
-					<div class="ui positive button"> <i class = "ui plus icon"> </i></div>
-				</div>
-			</div>
-
-		</div>
-		<div class = "eight wide column"> 
-
-			<div class="ui fluid card">
-				<div class="content">
-					<div class = "ui inverted segment left floated">
-						<div class = "ui tiny inverted statistics left floated"> 
-							<div class = "statistic">
-								<div class = "value"> 45
-								</div> 
-								<div class = "label"> Count </div>
-							</div>
-						</div>
-					</div>
-					<img class="ui tiny image left floated" src="../img/technical.png"> 
-					<div class = "header"> Technical Assistance </div>
-					<div class = "meta"> Help with printers, computers, software, scanners, etc. </div>
-				</div> 
-				<div class="ui two bottom attached buttons">
-					<div class="ui negative button"> <i class = "ui minus icon"> </i> </div>
-					<div class="ui positive button"> <i class = "ui plus icon"> </i></div>
-				</div>
-			</div>
-
-		</div>
-		<div class = "eight wide column"> 
-
-			<div class="ui fluid card">
-				<div class="content">
-					<div class = "ui inverted segment left floated">
-						<div class = "ui tiny inverted statistics left floated"> 
-							<div class = "statistic">
-								<div class = "value"> 45
-								</div> 
-								<div class = "label"> Count </div>
-							</div>
-						</div>
-					</div>
-					<img class="ui tiny image left floated" src="../img/referral.png"> 
-					<div class = "header"> Referral </div> 
-					<div class = "meta"> Referral to advanced research support, library location, campus support, etc. </div>
-
-				</div> 
-				<div class="ui two bottom attached buttons">
-					<div class="ui negative button"> <i class = "ui minus icon"> </i> </div>
-					<div class="ui positive button"> <i class = "ui plus icon"> </i></div>
-				</div>
-			</div>
-
-		</div>
-
-		<div class = "sixteen wide column"> <div class = "ui white massive button right floated"> Submit </div> </div>	
-	</div>
-
-
-
-
-
+                    <div class = "header"> Directions </div> 
+                    <div class = "meta"> Location or directions provided. E.G. rooms, events, contact info, etc. </div> 
+                </div>
+                <div class="ui two bottom attached buttons">
+                    <div class="ui negative button"> <i class = "ui minus icon"> </i> </div>
+                    <div class="ui positive button"> <i class = "ui plus icon"> </i></div>
+                </div>
+            </div>
+        </div>
+        <div class = "eight wide column"> 
+            <div class="ui fluid card">
+                <div class="content">
+                    <div class = "ui inverted segment left floated">
+                        <div class = "ui tiny inverted statistics left floated"> 
+                            <div class = "statistic">
+                                <div class = "value"> 45
+                                </div> 
+                                <div class = "label"> Count </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="../img/lookup.png"> 
+                    <div class = "header"> Lookup </div>
+                    <div class = "meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
+                </div> 
+                <div class="ui two bottom attached buttons">
+                    <div class="ui negative button"> <i class = "ui minus icon"> </i> </div>
+                    <div class="ui positive button"> <i class = "ui plus icon"> </i></div>
+                </div>
+            </div>
+        </div>
+        <div class = "eight wide column"> 
+            <div class="ui fluid card">
+                <div class="content">
+                    <div class = "ui inverted segment left floated">
+                        <div class = "ui tiny inverted statistics left floated"> 
+                            <div class = "statistic">
+                                <div class = "value"> 45
+                                </div> 
+                                <div class = "label"> Count </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="../img/policy.png"> 
+                    <div class = "header"> Policy </div>
+                    <div class = "meta"> Hours, access privileges, borrowing, reservations, other policies. </div>
+                </div> 
+                <div class="ui two bottom attached buttons">
+                    <div class="ui negative button"> <i class = "ui minus icon"> </i> </div>
+                    <div class="ui positive button"> <i class = "ui plus icon"> </i></div>
+                </div>
+            </div>
+        </div>
+        <div class = "eight wide column"> 
+            <div class="ui fluid card">
+                <div class="content">
+                    <div class = "ui inverted segment left floated">
+                        <div class = "ui tiny inverted statistics left floated"> 
+                            <div class = "statistic">
+                                <div class = "value"> 45
+                                </div> 
+                                <div class = "label"> Count </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="../img/research.png">
+                    <div class = "header"> Research Assistance </div>
+                    <div class = "meta"> Help patron with research strategies, advice, overview of resources (drop-in). </div>
+                </div> 
+                <div class="ui two bottom attached buttons">
+                    <div class="ui negative button"> <i class = "ui minus icon"> </i> </div>
+                    <div class="ui positive button"> <i class = "ui plus icon"> </i></div>
+                </div>
+            </div>
+        </div>
+        <div class = "eight wide column"> 
+            <div class="ui fluid card">
+                <div class="content">
+                    <div class = "ui inverted segment left floated">
+                        <div class = "ui tiny inverted statistics left floated"> 
+                            <div class = "statistic">
+                                <div class = "value"> 45
+                                </div> 
+                                <div class = "label"> Count </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="../img/technical.png"> 
+                    <div class = "header"> Technical Assistance </div>
+                    <div class = "meta"> Help with printers, computers, software, scanners, etc. </div>
+                </div> 
+                <div class="ui two bottom attached buttons">
+                    <div class="ui negative button"> <i class = "ui minus icon"> </i> </div>
+                    <div class="ui positive button"> <i class = "ui plus icon"> </i></div>
+                </div>
+            </div>
+        </div>
+        <div class = "eight wide column"> 
+            <div class="ui fluid card">
+                <div class="content">
+                    <div class = "ui inverted segment left floated">
+                        <div class = "ui tiny inverted statistics left floated"> 
+                            <div class = "statistic">
+                                <div class = "value"> 45
+                                </div> 
+                                <div class = "label"> Count </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="../img/referral.png"> 
+                    <div class = "header"> Referral </div> 
+                    <div class = "meta"> Referral to advanced research support, library location, campus support, etc. </div>
+                </div> 
+                <div class="ui two bottom attached buttons">
+                    <div class="ui negative button"> <i class = "ui minus icon"> </i> </div>
+                    <div class="ui positive button"> <i class = "ui plus icon"> </i></div>
+                </div>
+            </div>
+        </div>
+        <div class = "sixteen wide column">
+            <div class = "ui white massive button right floated">
+                Submit
+            </div>
+        </div>  
+    </div>
 </body>
 </html>
