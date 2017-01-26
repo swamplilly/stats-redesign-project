@@ -1,15 +1,30 @@
 $(document).ready(function() {
-	$('body').click(function() {
-		// $('#ref').toggleClass('hidden');
-		$('#ref').transition({
-			animation : 'fade left',
-			duration : 1000,
-			interval : 200
-		});
-		// $('#qq').toggleClass('hidden');
+	$('#qq').click(function() {
 		$('#qq').transition({
-			animation : 'fade right',
-			duration : 1000
+			animation : 'fly right',
+			duration : 500
 		});
+
+		setTimeout(function(){
+			$('#ref').transition({
+				animation : 'fly left',
+				duration : 500
+			});
+		},500);
+	});
+
+	$('#ref').click(function() {
+		$('#ref').transition({
+			animation : 'fly left',
+			duration : 500
+		});
+
+		setTimeout(function(){
+			$('#qq').transition({
+				animation : 'fly right',
+				duration : 500
+			});
+		},500);
 	});
 });
+
