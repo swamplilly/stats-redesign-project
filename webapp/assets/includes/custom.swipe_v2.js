@@ -10,7 +10,7 @@ $(document).ready(function() {
 				animation : 'fly left',
 				duration : 500
 			});
-		},150);
+		},0);
 
 		$('#qqtab').removeClass('active');
 		$('#reftab').addClass('active');
