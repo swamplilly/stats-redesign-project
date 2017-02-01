@@ -45,6 +45,10 @@ function incrementCount(object) {
 }
 
 function editStatistics(object) {
+    // var title = "Directions";
+    // var obj = $("div.ui.fluid.card.withCount:contains('"+title+"')").find("div.value");
+    // alert(obj.text());
+
     /* Edit title of modal to match the tile being edited.
        Then, show the edited modal. */
     var title =
@@ -56,31 +60,33 @@ function editStatistics(object) {
     $('#edit').modal('show');
 
     /* Get the <div class="value"> object of that tile. */
-    var countObject =
-        $(object)
-            .parent()
-            .children('div.ui.inverted.segment.left.floated')
-            .children('div.ui.tiny.inverted.statistics.left.floated')
-            .children('div.statistic')
-            .children('div.value');
+    // var countObject =
+    //     $(object)
+    //         .parent()
+    //         .children('div.ui.inverted.segment.left.floated')
+    //         .children('div.ui.tiny.inverted.statistics.left.floated')
+    //         .children('div.statistic')
+    //         .children('div.value');
 
     /* Wait for "Enter" to be pressed.
-       Then update the corresponding tile statistic */
-    $('#edit').keypress(countObject,function(event) {
+       Then update the corresponding tile statistic. */
+    $('#edit').keypress(title,function(event) {
         var keycode = (event.keyCode ? event.keyCode : event.which);
         if (keycode == '13') {
             var value = $('#new-count').val();
+            var countObject = $("div.ui.fluid.card.withCount:contains('"+title+"')").find("div.value");
             if (value !== '') {
                 countObject.text(value);
             }
             $('#edit').modal('hide');
+            countObject = null;
 
             return;
         }
     });
 
     /* Clear input value. */
-    $('#new-count').val('');
+    // $('#new-count').val('');
 
     return;
 }
