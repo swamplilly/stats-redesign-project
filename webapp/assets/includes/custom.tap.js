@@ -59,6 +59,8 @@ function editStatistics(object) {
     $('#edit-title').text(title)
     $('#edit').modal('show');
 
+    var countObject = $("div.ui.fluid.card.withCount:contains('"+title+"')").find("div.value");
+
     /* Get the <div class="value"> object of that tile. */
     // var countObject =
     //     $(object)
@@ -70,23 +72,25 @@ function editStatistics(object) {
 
     /* Wait for "Enter" to be pressed.
        Then update the corresponding tile statistic. */
-    $('#edit').keypress(title,function(event) {
+    $('#edit').keypress(function(event) {
+        var value = $('#new-count').val();
         var keycode = (event.keyCode ? event.keyCode : event.which);
         if (keycode == '13') {
-            var value = $('#new-count').val();
-            var countObject = $("div.ui.fluid.card.withCount:contains('"+title+"')").find("div.value");
-            if (value !== '') {
-                countObject.text(value);
-            }
-            $('#edit').modal('hide');
-            countObject = null;
+            // if (value !== '') {
+            //     countObject.text(value);
+            // }
+            // $('#edit').modal('hide');
+            // countObject = null;
 
-            return;
+            // return;
+            countObject.text(value);
+            return false
         }
+        event.off();
     });
 
     /* Clear input value. */
-    // $('#new-count').val('');
+    $('#new-count').val('');
 
     return;
 }
