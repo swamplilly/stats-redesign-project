@@ -11,9 +11,11 @@ $(document).ready(function() {
         incrementCount($(this));
     });
 
-    $('.ui.inverted.segment').on('taphold', function() {
-        editStatistics($(this));
-    });
+    $('#directions').on('taphold', editDirections);
+    $('#lookup').on('taphold', editLookup);
+    $('#policy').on('taphold', editPolicy);
+    $('#research').on('taphold', editResearch);
+    $('#technical').on('taphold', editTechnical);
 });
 
 /******************************************************************************
@@ -44,53 +46,137 @@ function incrementCount(object) {
     countObject.text(String(count));
 }
 
-function editStatistics(object) {
-    // var title = "Directions";
-    // var obj = $("div.ui.fluid.card.withCount:contains('"+title+"')").find("div.value");
-    // alert(obj.text());
+function editDirections() {
+    /* Gather relevant elements under easy-to-remember variables */
+    var object =
+        $('#directions')
+            .children('div.ui.tiny.inverted.statistics.left.floated')
+            .children('div.statistic')
+            .children('div.value');
+    var current_value = parseInt(object.text());
+    var object_count = $('#new-directions-count');
+    var object_modal = $('#directions-modal');
 
-    /* Edit title of modal to match the tile being edited.
-       Then, show the edited modal. */
-    var title =
-        $(object)
-            .parent()
-            .children('div.header')
-            .text();
-    $('#edit-title').text(title)
-    $('#edit').modal('show');
+    /* Show modal with current count as default. */
+    object_count.val(current_value);
+    object_modal.modal('show');
 
-    var countObject = $("div.ui.fluid.card.withCount:contains('"+title+"')").find("div.value");
-
-    /* Get the <div class="value"> object of that tile. */
-    // var countObject =
-    //     $(object)
-    //         .parent()
-    //         .children('div.ui.inverted.segment.left.floated')
-    //         .children('div.ui.tiny.inverted.statistics.left.floated')
-    //         .children('div.statistic')
-    //         .children('div.value');
-
-    /* Wait for "Enter" to be pressed.
-       Then update the corresponding tile statistic. */
-    $('#edit').keypress(function(event) {
-        var value = $('#new-count').val();
+    /* Update count on 'Enter', and hide modal. */
+    object_modal.keypress(function(event) {
         var keycode = (event.keyCode ? event.keyCode : event.which);
         if (keycode == '13') {
-            // if (value !== '') {
-            //     countObject.text(value);
-            // }
-            // $('#edit').modal('hide');
-            // countObject = null;
-
-            // return;
-            countObject.text(value);
-            return false
+            var new_value = parseInt(object_count.val());
+            object.text(new_value);
+            object_modal.modal('hide');
         }
-        event.off();
+        event.stopImmediatePropagation();
     });
+}
 
-    /* Clear input value. */
-    $('#new-count').val('');
+function editLookup() {
+    /* Gather relevant elements under easy-to-remember variables */
+    var object =
+        $('#lookup')
+            .children('div.ui.tiny.inverted.statistics.left.floated')
+            .children('div.statistic')
+            .children('div.value');
+    var current_value = parseInt(object.text());
+    var object_count = $('#new-lookup-count');
+    var object_modal = $('#lookup-modal');
 
-    return;
+    /* Show modal with current count as default. */
+    object_count.val(current_value);
+    object_modal.modal('show');
+
+    /* Update count on 'Enter', and hide modal. */
+    object_modal.keypress(function(event) {
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if (keycode == '13') {
+            var new_value = parseInt(object_count.val());
+            object.text(new_value);
+            object_modal.modal('hide');
+        }
+        event.stopImmediatePropagation();
+    });
+}
+
+function editPolicy() {
+    /* Gather relevant elements under easy-to-remember variables */
+    var object =
+        $('#policy')
+            .children('div.ui.tiny.inverted.statistics.left.floated')
+            .children('div.statistic')
+            .children('div.value');
+    var current_value = parseInt(object.text());
+    var object_count = $('#new-policy-count');
+    var object_modal = $('#policy-modal');
+
+    /* Show modal with current count as default. */
+    object_count.val(current_value);
+    object_modal.modal('show');
+
+    /* Update count on 'Enter', and hide modal. */
+    object_modal.keypress(function(event) {
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if (keycode == '13') {
+            var new_value = parseInt(object_count.val());
+            object.text(new_value);
+            object_modal.modal('hide');
+        }
+        event.stopImmediatePropagation();
+    });
+}
+
+function editResearch() {
+    /* Gather relevant elements under easy-to-remember variables */
+    var object =
+        $('#research')
+            .children('div.ui.tiny.inverted.statistics.left.floated')
+            .children('div.statistic')
+            .children('div.value');
+    var current_value = parseInt(object.text());
+    var object_count = $('#new-research-count');
+    var object_modal = $('#research-modal');
+
+    /* Show modal with current count as default. */
+    object_count.val(current_value);
+    object_modal.modal('show');
+
+    /* Update count on 'Enter', and hide modal. */
+    object_modal.keypress(function(event) {
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if (keycode == '13') {
+            var new_value = parseInt(object_count.val());
+            object.text(new_value);
+            object_modal.modal('hide');
+        }
+        event.stopImmediatePropagation();
+    });
+}
+
+function editTechnical() {
+    /* Gather relevant elements under easy-to-remember variables */
+    var object =
+        $('#technical')
+            .children('div.ui.tiny.inverted.statistics.left.floated')
+            .children('div.statistic')
+            .children('div.value');
+    var current_value = parseInt(object.text());
+    var object_count = $('#new-technical-count');
+    var object_modal = $('#technical-modal');
+
+    /* Show modal with current count as default. */
+    object_count.val(current_value);
+    object_modal.modal('show');
+
+    /* Update count on 'Enter', and hide modal. */
+    object_modal.keypress(function(event) {
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if (keycode == '13') {
+            var new_value = parseInt(object_count.val());
+            object.text(new_value);
+            object_modal.modal('hide');
+        }
+        event.stopImmediatePropagation();
+    });
 }
