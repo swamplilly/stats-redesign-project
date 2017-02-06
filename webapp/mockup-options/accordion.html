@@ -2,13 +2,22 @@
 <head>
     <title>Mockup</title>
 
-    <!-- JQuery -->
-    <script type="text/javascript" src="../assets/includes/jquery.min.js"></script>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- Include the jQuery library -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Include the jQuery Mobile library -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
     <!-- Semantic UI -->
     <link rel="stylesheet" type="text/css" href="../assets/includes/semantic.min.css?v=1">
     <script type="text/javascript" src="../assets/includes/semantic.min.js?v=1"></script>
-    <link rel="stylesheet" href = "../assets/includes/calendar/dist/calendar.min.css">
+    <link rel="stylesheet" href="../assets/includes/calendar/dist/calendar.min.css">
     <script type="text/javascript" src="../assets/includes/calendar/dist/calendar.min.js"></script>
     <script scr="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/components/accordion.js"></script>
 
@@ -23,15 +32,15 @@
 <body>
 
     <!-- Menu -->
-    <div class = "ui menu"> 
-        <a href = "index.html" class = "header item">Home</a> 
+    <div class="ui menu"> 
+        <a href="index.html" class="header item">Home</a> 
     </div>
 
     <!-- Calendar -->
-    <div class = "ui calendar" id = "calendar"> 
-        <div class = "ui input left icon"> 
-            <i class = "calendar icon"> </i> 
-            <input type = "text" placeholder = "Date">
+    <div class="ui calendar" id="calendar"> 
+        <div class="ui input left icon"> 
+            <i class="calendar icon"> </i> 
+            <input type="text" placeholder="      Date">
         </div> 
     </div>
     <br />
@@ -46,108 +55,98 @@
             Quick Questions
         </div>
         <div class="active content">
-            <div class = "ui equal width aligned grid"> 
-                <div class = "eight wide  column"> 
-                    <div class="ui fluid card">
-                        <div class="content"> 
-                            <div class = "ui inverted segment left floated"> 
-                                <div class = "ui tiny inverted statistics left floated"> 
-                                    <div class = "statistic">
-                                        <div class = "value"> 45 
-                                        </div> 
-                                        <div class = "label"> Count </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <img class="ui tiny image left floated" src="../../img/directions.png"> 
-
-                            <div class = "header"> Directions </div> 
-                            <div class = "meta"> Location or directions provided. E.G. rooms, events, contact info, etc. </div> 
-                        </div>
-                    </div>
-                </div>
-                <div class = "eight wide column"> 
-                    <div class="ui fluid card">
-                        <div class="content">
-                            <div class = "ui inverted segment left floated">
-                                <div class = "ui tiny inverted statistics left floated"> 
-                                    <div class = "statistic">
-                                        <div class = "value"> 45
-                                        </div> 
-                                        <div class = "label"> Count </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <img class="ui tiny image left floated" src="../../img/lookup.png"> 
-                            <div class = "header"> Lookup </div>
-                            <div class = "meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
-                        </div> 
-                    </div>
-                </div>
-                <div class = "eight wide column"> 
-                    <div class="ui fluid card">
-                        <div class="content">
-                            <div class = "ui inverted segment left floated">
-                                <div class = "ui tiny inverted statistics left floated"> 
-                                    <div class = "statistic">
-                                        <div class = "value"> 45
-                                        </div> 
-                                        <div class = "label"> Count </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <img class="ui tiny image left floated" src="../../img/policy.png"> 
-                            <div class = "header"> Policy </div>
-                            <div class = "meta"> Hours, access privileges, borrowing, reservations, other policies. </div>
-                        </div> 
-                    </div>
-                </div>
-                <div class = "eight wide column"> 
-                    <div class="ui fluid card">
-                        <div class="content">
-                            <div class = "ui inverted segment left floated">
-                                <div class = "ui tiny inverted statistics left floated"> 
-                                    <div class = "statistic">
-                                        <div class = "value"> 45
-                                        </div> 
-                                        <div class = "label"> Count </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <img class="ui tiny image left floated" src="../../img/research.png">
-                            <div class = "header"> Research Assistance </div>
-                            <div class = "meta"> Help patron with research strategies, advice, overview of resources (drop-in). </div>
-                        </div> 
-                    </div>
-                </div>
-                <div class = "eight wide column"> 
-                    <div class="ui fluid card">
-                        <div class="content">
-                            <div class = "ui inverted segment left floated">
-                                <div class = "ui tiny inverted statistics left floated"> 
-                                    <div class = "statistic">
-                                        <div class = "value"> 45
-                                        </div> 
-                                        <div class = "label"> Count </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <img class="ui tiny image left floated" src="../../img/technical.png"> 
-                            <div class = "header"> Technical Assistance </div>
-                            <div class = "meta"> Help with printers, computers, software, scanners, etc. </div>
-                        </div> 
-                    </div>
-
-                </div>
-                <div class="eight wide column">
-                    <div class = "ui centered grid">
-                        <div class="eight wide column">
-                            <div class = "ui massive button">
-                                Submit 
+            <div class="ui equal width aligned grid">
+                <div class="eight wide column"> 
+            <div class="ui fluid card withCount">
+                <div class="content"> 
+                    <div class="ui inverted segment left floated" id="directions"> 
+                        <div class="ui tiny inverted statistics left floated"> 
+                            <div class="statistic">
+                                <div class="value"> 0 
+                                </div> 
+                                <div class="label"> Count </div>
                             </div>
                         </div>
                     </div>
+                    <img class="ui tiny image left floated" src="../../img/directions.png"> 
+                    <div class="header"> Directions </div> 
+                    <div class="meta"> Location or directions provided. E.G. rooms, events, contact info, etc. </div> 
                 </div>
+            </div>
+        </div>
+        <div class="eight wide column"> 
+            <div class="ui fluid card withCount">
+                <div class="content">
+                    <div class="ui inverted segment left floated" id="lookup">
+                        <div class="ui tiny inverted statistics left floated"> 
+                            <div class="statistic">
+                                <div class="value"> 0
+                                </div> 
+                                <div class="label"> Count </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="../../img/lookup.png"> 
+                    <div class="header"> Lookup </div>
+                    <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
+                </div> 
+            </div>
+
+        </div>
+        <div class="eight wide column"> 
+            <div class="ui fluid card withCount">
+                <div class="content">
+                    <div class="ui inverted segment left floated" id="policy">
+                        <div class="ui tiny inverted statistics left floated"> 
+                            <div class="statistic">
+                                <div class="value"> 0
+                                </div> 
+                                <div class="label"> Count </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="../../img/policy.png"> 
+                    <div class="header"> Policy </div>
+                    <div class="meta"> Hours, access privileges, borrowing, reservations, other policies. </div>
+                </div> 
+            </div>
+        </div>
+        <div class="eight wide column"> 
+            <div class="ui fluid card withCount">
+                <div class="content">
+                    <div class="ui inverted segment left floated" id="research">
+                        <div class="ui tiny inverted statistics left floated"> 
+                            <div class="statistic">
+                                <div class="value"> 0
+                                </div> 
+                                <div class="label"> Count </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="../../img/research.png">
+                    <div class="header"> Research Assistance </div>
+                    <div class="meta"> Help patron with research strategies, advice, overview of resources (drop-in). </div>
+                </div> 
+            </div>
+        </div>
+        <div class="eight wide column"> 
+            <div class="ui fluid card withCount">
+                <div class="content">
+                    <div class="ui inverted segment left floated" id="technical">
+                        <div class="ui tiny inverted statistics left floated"> 
+                            <div class="statistic">
+                                <div class="value"> 0
+                                </div> 
+                                <div class="label"> Count </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="../../img/technical.png"> 
+                    <div class="header"> Technical Assistance </div>
+                    <div class="meta"> Help with printers, computers, software, scanners, etc. </div>
+                </div> 
+            </div>
+        </div>
             </div>
         </div>
 
@@ -162,8 +161,8 @@
                     <div class="ui fluid card">
                         <div class="content">
                             <img class="ui tiny image left floated" src="../../img/research.png"> 
-                            <div class = "header"> Research Assistance </div>
-                            <div class = "meta"> Help patron with research strategy, advice, overview of resources (drop-in). </div>
+                            <div class="header"> Research Assistance </div>
+                            <div class="meta"> Help patron with research strategy, advice, overview of resources (drop-in). </div>
                         </div> 
                     </div>
                 </div>
@@ -171,8 +170,8 @@
                     <div class="ui fluid card">
                         <div class="content">
                             <img class="ui tiny image left floated" src="../../img/technical.png"> 
-                            <div class = "header"> Technical Assistance </div>
-                            <div class = "meta"> Help with printers, computers, software, scanners, etc. </div>
+                            <div class="header"> Technical Assistance </div>
+                            <div class="meta"> Help with printers, computers, software, scanners, etc. </div>
                         </div> 
                     </div>
                 </div>
@@ -180,8 +179,8 @@
                     <div class="ui fluid card">
                         <div class="content">
                             <img class="ui tiny image left floated" src="../../img/lookup.png"> 
-                            <div class = "header"> Look up Known Item </div>
-                            <div class = "meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
+                            <div class="header"> Look up Known Item </div>
+                            <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
                         </div> 
                     </div>
                 </div>
@@ -189,8 +188,8 @@
                     <div class="ui fluid card">
                         <div class="content">
                             <img class="ui tiny image left floated" src="../../img/directions.png"> 
-                            <div class = "header"> Directional </div>
-                            <div class = "meta"> Location or directions provided e.g. rooms, events, contact information, etc. </div>
+                            <div class="header"> Directional </div>
+                            <div class="meta"> Location or directions provided e.g. rooms, events, contact information, etc. </div>
                         </div> 
                     </div>
                 </div>
@@ -198,8 +197,8 @@
                     <div class="ui fluid card">
                         <div class="content">
                             <img class="ui tiny image left floated" src="../../img/policy.png"> 
-                            <div class = "header"> Policy / Operations </div>
-                            <div class = "meta"> Hours, access privileges, borrowing, space reservations, other policies. </div>
+                            <div class="header"> Policy / Operations </div>
+                            <div class="meta"> Hours, access privileges, borrowing, space reservations, other policies. </div>
                         </div> 
                     </div>
                 </div>
@@ -263,7 +262,7 @@
                             </form>
                         </div>
                         <div class="eight wide column">
-                           <form class="ui form">
+                         <form class="ui form">
                             <div class="grouped fields">
                                 <label for="status">Patron Status</label>
                                 <div class="field">
@@ -363,6 +362,102 @@
             </div>
         </div>
     </div>
+
+    <!-- Directions Modal -->
+    <div class="ui modal" id="directions-modal">
+        <div class="content">
+            <div class="header">
+                <h1>
+                    Edit content for Directions
+                </h1>
+                <div class="ui massive form">
+                    <div class="field">
+                        <label>
+                            New count:
+                        </label>
+                        <input placeholder="E.G.: 42" type="number" min="0" inputmode="numberic" pattern="[0-9]*" id="new-directions-count">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lookup Modal -->
+    <div class="ui modal" id="lookup-modal">
+        <div class="content">
+            <div class="header">
+                <h1>
+                    Edit content for Lookup
+                </h1>
+                <div class="ui massive form">
+                    <div class="field">
+                        <label>
+                            New count:
+                        </label>
+                        <input placeholder="E.G.: 42" type="number" min="0" inputmode="numberic" pattern="[0-9]*" id="new-lookup-count">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Policy Modal -->
+    <div class="ui modal" id="policy-modal">
+        <div class="content">
+            <div class="header">
+                <h1>
+                    Edit content for Policy
+                </h1>
+                <div class="ui massive form">
+                    <div class="field">
+                        <label>
+                            New count:
+                        </label>
+                        <input placeholder="E.G.: 42" type="number" min="0" inputmode="numberic" pattern="[0-9]*" id="new-policy-count">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Research Modal -->
+    <div class="ui modal" id="research-modal">
+        <div class="content">
+            <div class="header">
+                <h1>
+                    Edit content for Research Assistance
+                </h1>
+                <div class="ui massive form">
+                    <div class="field">
+                        <label>
+                            New count:
+                        </label>
+                        <input placeholder="E.G.: 42" type="number" min="0" inputmode="numberic" pattern="[0-9]*" id="new-research-count">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technical Modal -->
+    <div class="ui modal" id="technical-modal">
+        <div class="content">
+            <div class="header">
+                <h1>
+                    Edit content for Technical Assistance
+                </h1>
+                <div class="ui massive form">
+                    <div class="field">
+                        <label>
+                            New count:
+                        </label>
+                        <input placeholder="E.G.: 42" type="number" min="0" inputmode="numberic" pattern="[0-9]*" id="new-technical-count">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 </body>
 </html>

@@ -5,7 +5,7 @@
  *****************************************************************************/
 
 $(document).ready(function() {
-    $('#ref').click(showModal);
+    $('#ref').click(showReferral);
 
     $('.withCount').click(function() {
         incrementCount($(this));
@@ -24,7 +24,7 @@ $(document).ready(function() {
  *
  *****************************************************************************/
 
-function showModal() {
+function showReferral() {
     $('#referral').modal('show');
 }
 
@@ -47,7 +47,7 @@ function incrementCount(object) {
 }
 
 function editDirections() {
-    /* Gather relevant elements under easy-to-remember variables */
+    /* Gather relevant elements. */
     var object =
         $('#directions')
             .children('div.ui.tiny.inverted.statistics.left.floated')
@@ -74,7 +74,7 @@ function editDirections() {
 }
 
 function editLookup() {
-    /* Gather relevant elements under easy-to-remember variables */
+    /* Gather relevant elements. */
     var object =
         $('#lookup')
             .children('div.ui.tiny.inverted.statistics.left.floated')
@@ -101,7 +101,7 @@ function editLookup() {
 }
 
 function editPolicy() {
-    /* Gather relevant elements under easy-to-remember variables */
+    /* Gather relevant elements. */
     var object =
         $('#policy')
             .children('div.ui.tiny.inverted.statistics.left.floated')
@@ -128,7 +128,7 @@ function editPolicy() {
 }
 
 function editResearch() {
-    /* Gather relevant elements under easy-to-remember variables */
+    /* Gather relevant elements. */
     var object =
         $('#research')
             .children('div.ui.tiny.inverted.statistics.left.floated')
@@ -155,7 +155,7 @@ function editResearch() {
 }
 
 function editTechnical() {
-    /* Gather relevant elements under easy-to-remember variables */
+    /* Gather relevant elements. */
     var object =
         $('#technical')
             .children('div.ui.tiny.inverted.statistics.left.floated')
