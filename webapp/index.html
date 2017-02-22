@@ -1,52 +1,68 @@
 <html>
-    <head>
-        <title>Stats Project Web App</title>
+<head>
+    <title>Stats Redesign Project</title>
 
-        <!-- iPad Setup -->
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Semantic UI -->
+    <link rel="stylesheet" type="text/css" href="../semantic/semantic.min.css">
+    <script src="../semantic/semantic.min.js"></script>
 
-        <!-- Images, Resources -->
-        <!-- Icon Link Here -->
-        <!-- Landscape Background Link Here -->
-        <!-- Portrait Background Link Here -->
+    <!-- JQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
 
-        <!-- Semantic UI -->
-        <link rel="stylesheet" type="text/css" href="assets/includes/semantic.min.css?v=1">
-        <script type="text/javascript" src="assets/includes/semantic.min.js?v=1"></script>
+    <!-- Personally Defined CSS/Javascript -->
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+    <script src="../js/javascript.js"></script>
+</head>
+<body>
 
-        <!-- JQuery -->
-        <script type="text/javascript" src="assets/includes/jquery.min.js"></script>
-
-        <!-- Customization -->
-        <link rel="stylesheet" type="text/css" href="assets/includes/custom.css?v=1" />
-        <!-- IScroll Link here -->
-        <script type="text/javascript" src="/assets/includes/custom.js?v=1"></script>
-    </head>
-
-    <body>
-        <!-- Menu -->
-        <div class="ui secondary inverted menu">
-            <div class="right menu">
-                <a class="item">
-                    Login
-                </a>
-            </div>
+    <!-- Menu -->
+    <div class="ui secondary inverted menu" style = "background-color: #1465B5">
+        <div class="right menu">
+            <a class="item">
+                Login
+            </a>
         </div>
+    </div>
 
-        <div class="ui equal width center aligned grid">
-            <a class="six wide olive column" href="references.html">Young Research Library</a>
-            <div class="four wide column" id="black"></div>
-            <a class="six wide pink column" href="references.html">Arts Library</a>
-            <div class="three wide column" id="black"></div>
-            <a class="eight wide blue column" href="references.html">Powell Library</a>
-            <div class="five wide olive column"></div>
-            <div class="four wide pink column"></div>
-            <a class="four wide olive column" href="references.html">Biomedical Library</a>
-            <div class="four wide column" id="black"></div>
-            <a class="four wide blue column" href="references.html">Music Library</a>
-        </div>
-    </body>
+
+ 
+
+
+  <div class="ui equal width height center aligned grid" style = "margin: 20px; ">
+        <a class="six wide column" href="reference.html" style = "color:white; background-color: #FEC31C; border-style: solid; border-width: 10px; border-color:white">Young Research Library</a>
+        <div class="four wide column" style = "color:white; background-color: #CF322D; border-style: solid; border-width: 10px; border-color:white"></div>
+        <a class="six wide column" href="reference.html" style = "color:white; background-color: #48BEFA; border-style: solid; border-width: 10px; border-color:white">Biomedical Library</a>
+        <div class = "three wide column ui segment">
+        <img class = "ui massive image" src = "../img/Statsform_Stock_Photos/powellfront.JPG"></img> </div>
+
+        <a class="eight wide blue column" href="reference.html" style = "color:white; background-color: #CF322D; border-style: solid; border-width: 10px; border-color:white">Powell Library</a>
+        <div class="five wide olive column" style = "color:white; background-color: #CF322D; border-style: solid; border-width: 10px; border-color:white"></div>
+        <div class="four wide pink column" style = "color:white; background-color: #CF322D; border-style: solid; border-width: 10px; border-color:white"></div>
+        <a class="four wide olive column" href="reference.html" style = "color:white; background-color: #CF322D; border-style: solid; border-width: 10px; border-color:white">Arts Library</a>
+        <div class="four wide column" id="black" style = "color:white; background-color: #CF322D; border-style: solid; border-width: 10px; border-color:white"></div>
+        <a class="four wide blue column" href="reference.html" style = "color:white; background-color: #CF322D; border-style: solid; border-width: 10px; border-color:white">Music Library</a>
+    </div>      
+
+  
+<!-- 
+
+2/15:
+I got registered for the image library account and figured out how to include images..
+
+
+TO DO:
+
+
+    * add photos from the ucla image library
+    * figure out how to maintain aspect ratio of height responsively
+    * figure out how to vertically center text
+
+
+    IDEAL:
+
+    * opacity. Maybe instead of solid color blocks behind text, it is a nice photo with a colored slight opacity over it. 
+
+--> 
+
+</body>
 </html>
