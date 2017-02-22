@@ -5,13 +5,23 @@
 }
 
 
+#white {
+    background-color: white;
+    color: white;
+}
+
+
 .grid {
     height: 100%;
+
 }
 
 .column {
     font-size: 50px;
-    line-height: 80px;
+    line-height: 90px;
+  height: 90px;
+
+    
 }
 
 .ui.secondary.inverted.menu {
