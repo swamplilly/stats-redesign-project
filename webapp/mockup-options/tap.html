@@ -15,10 +15,8 @@
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
     <!-- Semantic UI -->
-    <link rel="stylesheet" type="text/css" href="../assets/includes/semantic.min.css?v=1">
-    <script type="text/javascript" src="../assets/includes/semantic.min.js?v=1"></script>
-    <link rel="stylesheet" href="../assets/includes/calendar/dist/calendar.min.css">
-    <script type="text/javascript" src="../assets/includes/calendar/dist/calendar.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../semantic/semantic.min.css">
+    <script src="../../semantic/semantic.min.js"></script>
 
     <!-- Customization -->
     <link rel="stylesheet" type="text/css" href="../assets/includes/custom.tap.css?v=1" />
@@ -29,8 +27,31 @@
 </head>
 <body>
     <!-- Menu -->
-    <div class="ui menu"> 
-        <a href="../index.html" class="header item" rel="external" data-ajax="false">Home</a> 
+    <div class="ui secondary inverted menu">
+        <div class="ui huge breadcrumb">
+            <div class="section" >
+                <a class="item" href="index.html" rel="external" data-ajax="false">
+                    Home
+                </a>
+            </div>
+            <i class="right chevron icon divider"></i>
+            <div class="section">
+                <a class="item" href="../references.html" rel="external" data-ajax="false">
+                    Specific Library
+                </a>
+            </div>
+            <i class="right chevron icon divider"></i>
+            <div class="active section">
+                <a class="item">
+                    Stats Form
+                </a>
+            </div>
+        </div>
+        <div class="right menu">
+            <a class="item">
+                Login
+            </a>
+        </div>
     </div>
 
     <!-- Calendar -->

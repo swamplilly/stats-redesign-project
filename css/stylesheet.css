@@ -22,7 +22,7 @@
 }
 
 .ui.secondary.inverted.menu {
-    background-color: black;
+    background-color: rgba(0,85,166,1);
     font-size: 20px;
 }
 
@@ -32,21 +32,18 @@
     border-style:solid;
     border-width:10px;
     border-color:white;
+    overflow: hidden;
 }
 
-
 .column img {
-    height:100%;
-    width:100%;
+    width: 500px;
+    height: 300px;
 }
 
 .ui.equal.width.center.aligned.grid {
     margin:20px;
 }
 
-.ui.secondary.inverted.menu {
-    background-color: rgba(0,85,166,1);
-}
 
 #YRL {
     background-color: rgba(0,85,166,1);

@@ -8,12 +8,6 @@ body {
     font-size: 16px;
 }
 
-#black {
-    background-color: black;
-    color: white;
-}
-
-
 .ui.equal.width.center.aligned.grid {
     height: 100%;
 }
@@ -24,19 +18,10 @@ a.column {
 }
 
 .ui.secondary.inverted.menu {
-    background-color: black;
+    background-color: rgba(0,85,166,1);
     font-size: 20px;
 }
 
 .inverted.segment {
     height: 80px;
-}
-
-.ui.negative.button, .ui.negative.button:hover {
-    background-color: #CF322D;
-}
-
-.ui.positive.button, .ui.positive.button:hover {
-
-    background-color: #68863F;
 }
