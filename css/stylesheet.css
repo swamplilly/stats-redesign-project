@@ -1,9 +1,17 @@
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
 
 #black {
     background-color: black;
     color: white;
 }
 
+
+body{ 
+font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+
+}
 
 #white {
     background-color: white;
@@ -22,7 +30,7 @@
 }
 
 .ui.secondary.inverted.menu {
-    background-color: rgba(0,85,166,1);
+    background-color: #3284bf;
     font-size: 20px;
 }
 
@@ -44,25 +52,29 @@
     margin:20px;
 }
 
+.verticalalign {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 #YRL {
-    background-color: rgba(0,85,166,1);
+    background-color: #ffb300;
 }
 
 #BL {
-    background-color: rgba(0,165,229,1);
+    background-color: #1e4b87;
 }
 
 #POWELL {
-    background-color: rgba(0,85,166,1);
-}
+    background-color: #3284bf; }
 
 #AL {
-    background-color: rgba(0,165,229,1);
+    background-color: #1e4b87;
 }
 
 #ML {
-    background-color: rgba(0,85,166,1);
+    background-color: #ffb300;
 }
 
 #sec1 {
