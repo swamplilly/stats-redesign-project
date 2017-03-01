@@ -6,6 +6,17 @@
     color: white;
 }
 
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+}
 
 body{ 
 font-family: 'Montserrat', sans-serif;
@@ -24,13 +35,7 @@ font-weight: bold;
 
 }
 
-.darken {
-  background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    );
-}
+
 
 .column {
     font-size: 50px;
@@ -75,7 +80,8 @@ font-weight: bold;
 }
 
 #POWELL {
-    background-color: #3284bf; }
+    background-color: #3284bf; 
+}
 
 #AL {
     background-color: #1e4b87;
@@ -86,25 +92,52 @@ font-weight: bold;
 }
 
 #sec1 {
-    background-color: rgba(0,85,166,1);
+    background-color: #1e4b87;
 }
 
 #sec2 {
-    background-color: rgba(0,165,229,1);
+    background-color: #3284bf;
 }
 
 #sec3 {
-    background-color: rgba(0,165,229,1);
+    background-color: #3284bf;
 }
 
 #sec4 {
-    background-color: rgba(0,85,166,1);
+    background-color: #1e4b87;
 }
 
 #sec5 {
-    background-color: rgba(0,85,166,1);
+    background-color: #1e4b87;
 }
 
 #sec6 {
-    background-color: rgba(0,165,229,1);
+    background-color: #3284bf;
+}
+
+.containerBox {
+    position: relative;
+    display: inline-block;
+}
+.text-box {
+    position: absolute;    
+    height: 100%;
+    text-align: center;    
+    width: 100%;
+}
+.text-box:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+h4 {
+   display: inline-block;
+   font-size: 80px; /*or whatever you want*/
+   color: white;   
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
