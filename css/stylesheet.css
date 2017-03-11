@@ -20,7 +20,7 @@ h2 {
 
 body{ 
 font-family: 'Montserrat', sans-serif;
-font-weight: bold;
+font-weight: bold; <link rel="stylesheet" type="text/css" href="css/style.css">
 
 }
 
@@ -64,6 +64,8 @@ font-weight: bold;
 .ui.equal.width.center.aligned.grid {
     margin:20px;
 }
+
+
 
 .verticalalign {
   position: relative;
@@ -141,3 +143,4 @@ img {
   max-width: 100%;
   height: auto;
 }
+
